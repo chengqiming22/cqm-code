@@ -10,6 +10,45 @@
     <version>1.0</version>
     <modules>
         <module>leetcode</module>
+        <module>cqm-blog</module>
     </modules>
+
+    <properties>
+        <spring.version>4.3.11.RELEASE</spring.version>
+        <servlet.version>4.0.0</servlet.version>
+        <freemarker.version>2.3.23</freemarker.version>
+    </properties>
+
+    <dependencyManagement>
+
+        <!--spring-->
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-webmvc</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context-support</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>javax.servlet-api</artifactId>
+                <version>${servlet.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.freemarker</groupId>
+                <artifactId>freemarker</artifactId>
+                <version>${freemarker.version}</version>
+            </dependency>
+
+        </dependencies>
+
+    </dependencyManagement>
 
 </project>
