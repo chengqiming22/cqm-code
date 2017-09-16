@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>小鱼儿的博客</title>
+    <title>小鱼儿的博客2</title>
     <link href="${rc.contextPath}/css/bootstrap.min.css" rel="stylesheet">
     <link href="${rc.contextPath}/css/style.css" rel="stylesheet">
 </head>
