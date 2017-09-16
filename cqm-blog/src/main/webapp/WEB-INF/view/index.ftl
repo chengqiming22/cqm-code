@@ -31,7 +31,7 @@
             <ul class="nav navbar-nav navbar-right">
                 <li>
                     <a href="#"class="dropdown-toggle" data-toggle="dropdown">
-                        欢迎，小明
+                        欢迎，小明明
                         <b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
