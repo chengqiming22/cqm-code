@@ -14,10 +14,10 @@
     </modules>
 
     <properties>
+        <failOnMissingWebXml>false</failOnMissingWebXml>
         <spring.version>4.3.11.RELEASE</spring.version>
         <servlet.version>4.0.0</servlet.version>
         <freemarker.version>2.3.23</freemarker.version>
-        <failOnMissingWebXml>false</failOnMissingWebXml>
     </properties>
 
     <dependencyManagement>

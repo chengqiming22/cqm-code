@@ -1,0 +1,28 @@
+.content {
+    margin: 0 50px;
+}
+
+.sidebar-card {
+    width: 250px;
+}
+
+.sidebar-card .panel-body {
+    padding: 0;
+}
+
+.sidebar-card .list-group {
+    margin: 0;
+}
+
+.sidebar-card .list-group li.list-group-item {
+    border-left: none;
+    border-right:none;
+}
+
+.sidebar-card .list-group li.list-group-item:first-child {
+    border-top: none;
+}
+
+.sidebar-card .list-group li.list-group-item:last-child {
+    border-bottom: none;
+}
