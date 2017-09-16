@@ -17,6 +17,7 @@
         <spring.version>4.3.11.RELEASE</spring.version>
         <servlet.version>4.0.0</servlet.version>
         <freemarker.version>2.3.23</freemarker.version>
+        <failOnMissingWebXml>false</failOnMissingWebXml>
     </properties>
 
     <dependencyManagement>
@@ -50,17 +51,5 @@
         </dependencies>
 
     </dependencyManagement>
-
-    <build>
-        <plugins>
-            <plugin>
-                <artifactId>maven-war-plugin</artifactId>
-                <version>2.4</version>
-                <configuration>
-                    <failOnMissingWebXml>false</failOnMissingWebXml>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>
