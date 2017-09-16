@@ -40,7 +40,7 @@
                     </ul>
                 </li>
             </ul>
-            <form class="navbar-form">
+            <form class="navbar-form navbar-right">
                 <div class="input-group">
                     <input type="text" class="form-control">
                     <span class="input-group-btn">
