@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>小鱼儿的博客</title>
-    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="${rc.contextPath}/css/bootstrap.min.css" rel="stylesheet">
     <link href="${rc.contextPath}/css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -52,7 +52,7 @@
     </div>
 </nav>
 </body>
-<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="${rc.contextPath}/js/jquery.min.js"></script>
+<script src="${rc.contextPath}/js/bootstrap.min.js"></script>
 
 </html>
