@@ -13,6 +13,7 @@
         <module>cqm-blog</module>
     </modules>
 
+
     <properties>
         <failOnMissingWebXml>false</failOnMissingWebXml>
         <spring.version>4.3.11.RELEASE</spring.version>
