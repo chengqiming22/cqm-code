@@ -17,7 +17,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="${rc.contextPath}/index">小鱼儿的博客</a>
+            <a class="navbar-brand" href="${rc.contextPath}">小鱼儿的博客</a>
         </div>
         <div id="nav-target" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">

@@ -8,13 +8,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/")
 public class HomeController {
 
-    @GetMapping("/")
+    @GetMapping("")
     public String home(){
-        return "redirect:/index";
+        return "index";
     }
 
     @GetMapping("index")
     public String index(){
-        return "index";
+        return "redirect:/";
     }
 }
