@@ -22,8 +22,9 @@
 
     <dependencyManagement>
 
-        <!--spring-->
         <dependencies>
+
+            <!--spring-->
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-webmvc</artifactId>
@@ -35,6 +36,7 @@
                 <version>${spring.version}</version>
             </dependency>
 
+            <!--servlet-->
             <dependency>
                 <groupId>javax.servlet</groupId>
                 <artifactId>javax.servlet-api</artifactId>
@@ -42,6 +44,7 @@
                 <scope>provided</scope>
             </dependency>
 
+            <!--freemarker-->
             <dependency>
                 <groupId>org.freemarker</groupId>
                 <artifactId>freemarker</artifactId>
