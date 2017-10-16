@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="${rc.contextPath}/css/bootstrap.min.css" rel="stylesheet">
     <link href="${rc.contextPath}/css/style.css" rel="stylesheet">
+
+    <script src="${rc.contextPath}/js/jquery.min.js"></script>
+    <script src="${rc.contextPath}/js/underscore.min.js"></script>
+    <script src="${rc.contextPath}/js/bootstrap.min.js"></script>
+    <script src="${rc.contextPath}/js/vue.min.js"></script>
+    <script src="${rc.contextPath}/js/marked.min.js"></script>
+
 </head>
 <body>
 <nav class="navbar navbar-default navbar-static-top">
@@ -57,7 +64,5 @@
     <#nested>
 </div>
 </body>
-<script src="${rc.contextPath}/js/jquery.min.js"></script>
-<script src="${rc.contextPath}/js/bootstrap.min.js"></script>
 </html>
 </#macro>
