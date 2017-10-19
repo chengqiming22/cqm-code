@@ -2,57 +2,42 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.cqm</groupId>
     <artifactId>cqm-code</artifactId>
+    <version>1.0.0</version>
     <packaging>pom</packaging>
-    <version>1.0</version>
     <modules>
-        <module>leetcode</module>
         <module>cqm-blog</module>
+        <module>leetcode</module>
     </modules>
 
     <properties>
-        <failOnMissingWebXml>false</failOnMissingWebXml>
-        <spring.version>4.3.11.RELEASE</spring.version>
-        <servlet.version>4.0.0</servlet.version>
-        <freemarker.version>2.3.23</freemarker.version>
+        <java.version>1.8</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <spring.boot.version>1.5.8.RELEASE</spring.boot.version>
     </properties>
 
     <dependencyManagement>
-
         <dependencies>
-
-            <!--spring-->
             <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-webmvc</artifactId>
-                <version>${spring.version}</version>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+                <version>${spring.boot.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-context-support</artifactId>
-                <version>${spring.version}</version>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-freemarker</artifactId>
+                <version>${spring.boot.version}</version>
             </dependency>
 
-            <!--servlet-->
             <dependency>
-                <groupId>javax.servlet</groupId>
-                <artifactId>javax.servlet-api</artifactId>
-                <version>${servlet.version}</version>
-                <scope>provided</scope>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-test</artifactId>
+                <version>${spring.boot.version}</version>
+                <scope>test</scope>
             </dependency>
-
-            <!--freemarker-->
-            <dependency>
-                <groupId>org.freemarker</groupId>
-                <artifactId>freemarker</artifactId>
-                <version>${freemarker.version}</version>
-            </dependency>
-
         </dependencies>
-
     </dependencyManagement>
-
 </project>
