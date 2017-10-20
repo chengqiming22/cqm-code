@@ -1,0 +1,19 @@
+eureka:
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+logging:
+  level: warn
+spring:
+  application:
+    name: server
+---
+spring:
+  profiles: server1
+server:
+  port: 8761
+---
+spring:
+  profiles: server2
+server:
+  port: 8762

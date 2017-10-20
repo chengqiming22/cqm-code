@@ -1,0 +1,15 @@
+logging:
+  level: warn
+spring:
+  application:
+    name: blog
+  freemarker:
+    request-context-attribute: rc
+management:
+  security:
+    enabled: false
+endpoints:
+  shutdown:
+    enabled: true
+server:
+  port: 8080

@@ -1,25 +1,24 @@
 package com.cqm;
 
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 /**
  * Created by qmcheng on 2017/10/19 0019.
  */
-@EnableDiscoveryClient
+@EnableEurekaServer
 @SpringBootApplication
-public class BlogApplication extends SpringBootServletInitializer {
+public class EurekaServer  extends SpringBootServletInitializer {
 
   @Override
   protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-    builder.sources(BlogApplication.class);
+    builder.sources(EurekaServer.class);
     return super.configure(builder);
   }
 
   public static void main(String[]args){
-    SpringApplication.run(BlogApplication.class, args);
+    new SpringApplicationBuilder(EurekaServer.class).web(true).run(args);
   }
 }
