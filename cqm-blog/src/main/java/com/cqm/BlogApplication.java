@@ -9,7 +9,6 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 /**
  * Created by qmcheng on 2017/10/19 0019.
  */
-@EnableDiscoveryClient
 @SpringBootApplication
 public class BlogApplication extends SpringBootServletInitializer {
 
