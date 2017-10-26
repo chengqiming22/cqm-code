@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.List;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Created by qmcheng on 2017/10/19 0019.
@@ -27,6 +28,7 @@ public class HomeController {
 
   @GetMapping("/index")
   public String index(){
+    ConcurrentHashMap c = new ConcurrentHashMap();
     return "index";
   }
 }
