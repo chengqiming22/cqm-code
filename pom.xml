@@ -16,6 +16,7 @@
         <module>leetcode</module>
         <module>cqm-server</module>
         <module>cqm-blog</module>
+        <module>word-count</module>
     </modules>
 
     <properties>
