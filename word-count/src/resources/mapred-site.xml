@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+  <property>
+    <name>mapreduce.framework.name</name>
+    <value>yarn</value>
+  </property>
+  <property>
+    <name>mapreduce.jobhistory.address</name>
+    <value>master:10020</value>
+    <description>MapReduce JobHistory Server IPC host:port</description>
+  </property>
+  <property>
+    <name>mapreduce.jobhistory.webapp.address</name>
+    <value>master:19888</value>
+    <description>MapReduce JobHistory Server Web UI host:port</description>
+  </property>
+  <property>
+    <name>mapreduce.jobhistory.done-dir</name>
+    <value>/history/done</value>
+  </property>
+  <property>
+    <name>mapreduce.jobhistory.intermediate-done-dir</name>
+    <value>/history/done_intermediate</value>
+  </property>
+  <property>
+    <name>mapred.remote.os</name>
+    <value>Linux</value>
+    <description>Remote MapReduce framework's OS, can be either Linux or Windows</description>
+  </property>
+  <property>
+    <name>mapreduce.app-submission.cross-platform</name>
+    <value>true</value>
+  </property>
+</configuration>
