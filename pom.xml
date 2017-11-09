@@ -17,6 +17,7 @@
         <module>cqm-server</module>
         <module>cqm-blog</module>
         <module>word-count</module>
+        <module>max-temperature</module>
     </modules>
 
     <properties>

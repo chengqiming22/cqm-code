@@ -18,7 +18,6 @@ import java.util.List;
  */
 public class WordCountTest {
 
-
     private Mapper map;
     private MapDriver mapDriver;
 
