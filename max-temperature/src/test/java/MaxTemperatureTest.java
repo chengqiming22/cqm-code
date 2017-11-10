@@ -42,7 +42,7 @@ public class MaxTemperatureTest {
   @SuppressWarnings("unchecked")
   public void testMap() throws IOException {
     mapDriver.withInput(new LongWritable(), new Text("45007 2017 10 10 0 31.3000 999999.0000"))
-        .withOutput(new IntWritable(2017), new DoubleWritable(31.3)).runTest();
+        .withOutput(new Text("2017/10/10"), new DoubleWritable(31.3)).runTest();
   }
 
   @Test
@@ -52,7 +52,7 @@ public class MaxTemperatureTest {
     values.add(new DoubleWritable(31.3));
     values.add(new DoubleWritable(17.7));
     values.add(new DoubleWritable(17.8));
-    reduceDriver.withInput(new IntWritable(2017), values).withOutput(new IntWritable(2017), new DoubleWritable(31.3))
+    reduceDriver.withInput(new Text("2017/10/10"), values).withOutput(new Text("2017/10/10"), new DoubleWritable(31.3))
         .runTest();
   }
 
@@ -62,6 +62,6 @@ public class MaxTemperatureTest {
     mapReduceDriver.withInput(new LongWritable(), new Text("45007 2017 10 10 0 31.3000 999999.0000"))
         .withInput(new LongWritable(), new Text("45007 2017 10 10 0 17.8000 999999.0000"))
         .withInput(new LongWritable(), new Text("45007 2017 10 10 1 17.7000 999999.0000"))
-        .withOutput(new IntWritable(2017), new DoubleWritable(31.3)).runTest();
+        .withOutput(new Text("2017/10/10"), new DoubleWritable(31.3)).runTest();
   }
 }
